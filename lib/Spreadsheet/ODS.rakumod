@@ -14,8 +14,8 @@ class Spreadsheet::ODS::TableRow {
     has LibXML::Element $.element;
     has Spreadsheet::ODS::TableCell @.cells;
     submethod TWEAK() {
-        @!cells = $!element.childNodes.grep(LibXML::Element).grep(*.name eq 'table:table-cell').map: -> LibXML::Element $element {
-            Spreadsheet::ODS::TableCell.new: :$element
+        @!cells = flat $!element.childNodes.grep(LibXML::Element).grep(*.name eq 'table:table-cell').map: -> LibXML::Element $element {
+            Spreadsheet::ODS::TableCell.new(:$element) xx ($element.getAttribute('table:number-columns-repeated') // 1)
         };
     }
 }
