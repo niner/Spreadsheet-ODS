@@ -1,20 +1,28 @@
 {
-    "meta-version": 1,
-    "name": "Spreadsheet::ODS",
-    "version"       : "0.1",
-    "perl"          : "6.c",
-    "auth"          : "github:niner",
-    "authors"       : [ "Stefan Seifert" ],
-    "description"   : "Work with Open Document (ODS) spreadsheets.",
-    "depends": {
-        "runtime": {
-            "requires": ["Libarchive::Simple", "LibXML"]
-        }
-    },
-    "provides": {
-        "Spreadsheet::ODS": "lib/Spreadsheet/ODS.rakumod"
-    },
-    "repo-type"     : "git",
-    "source-url"    : "git://github.com/niner/Spreadsheet-ODS.git",
-    "license"       : "Artistic-2.0"
+  "auth": "zef:nine",
+  "authors": [
+    "Stefan Seifert"
+  ],
+  "depends": {
+    "runtime": {
+      "requires": [
+        "Libarchive::Simple",
+        "LibXML"
+      ]
+    }
+  },
+  "description": "Work with Open Document (ODS) spreadsheets.",
+  "license": "Artistic-2.0",
+  "meta-version": 1,
+  "name": "Spreadsheet::ODS",
+  "perl": "6.d",
+  "provides": {
+    "Spreadsheet::ODS": "lib/Spreadsheet/ODS.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "git://github.com/niner/Spreadsheet-ODS.git",
+  "tags": [
+  ],
+  "version": "0.1"
 }

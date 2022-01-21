@@ -1,3 +1,27 @@
+=begin pod
+
+=head1 NAME
+
+Spreadsheet::ODS - Work with Open Document (ODS) spreadsheets.
+
+=head1 SYNOPSIS
+
+=begin code :lang<raku>
+
+use Spreadsheet::ODS;
+
+=end code
+
+=head1 DESCRIPTION
+
+Spreadsheet::ODS is ...
+
+=head1 AUTHOR
+
+Stefan Seifert <nine@detonation.org>
+
+=end pod
+
 use Libarchive::Simple;
 use LibXML::Document;
 use LibXML::Element;
@@ -56,6 +80,7 @@ class Spreadsheet::ODS::DocumentContent {
         self.new(:$doc, :@spreadsheets)
     }
 }
+
 class Spreadsheet::ODS {
 
     #| Map of files in the decompressed archive we read from, if any.
@@ -90,3 +115,13 @@ class Spreadsheet::ODS {
         }
     }
 }
+
+=begin pod
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2022 Stefan Seifert
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
+=end pod
