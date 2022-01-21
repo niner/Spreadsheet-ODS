@@ -3,6 +3,8 @@
   "authors": [
     "Stefan Seifert"
   ],
+  "build-depends": [
+  ],
   "depends": {
     "runtime": {
       "requires": [
@@ -23,6 +25,8 @@
   ],
   "source-url": "git://github.com/niner/Spreadsheet-ODS.git",
   "tags": [
+  ],
+  "test-depends": [
   ],
   "version": "0.1"
 }
