@@ -6,6 +6,11 @@
     "auth"          : "github:niner",
     "authors"       : [ "Stefan Seifert" ],
     "description"   : "Work with Open Document (ODS) spreadsheets.",
+    "depends": {
+        "runtime": {
+            "requires": ["Libarchive::Simple", "LibXML"]
+        }
+    },
     "provides": {
         "Spreadsheet::ODS": "lib/Spreadsheet/ODS.rakumod"
     },
